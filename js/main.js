@@ -5,3 +5,4 @@ import initHeaderWatcher from "./modules/header.js";
 initMobileMenu();
 initDropdown();
 initHeaderWatcher();
+AOS.init();

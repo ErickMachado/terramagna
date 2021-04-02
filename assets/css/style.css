@@ -14,6 +14,7 @@
 }
 
 .header {
+  animation: fadeInDown 1s forwards;
   padding: 16px 0;
   position: fixed;
   top: 0;
@@ -142,7 +143,7 @@
   cursor: pointer;
   color: var(--color-primary);
   display: flex;
-  padding: 8px 32px;
+  padding: 10px 32px;
 }
 
 .btn_login img {
@@ -150,6 +151,8 @@
 }
 
 .content {
+  animation: fadeInDown 1s backwards;
+  animation-delay: 1s;
   align-items: center;
   display: flex;
   height: 90%;
@@ -222,12 +225,13 @@
   color: var(--color-light);
   cursor: pointer;
   margin-top: 16px;
-  padding: 8px 0;
+  padding: 10px 0;
   width: 100%;
 }
 
 .scrollIcon img {
   animation: jump 0.8s alternate infinite;
+  width: 30px;
 }
 
 /* Articles */
@@ -358,6 +362,7 @@
   align-items: center;
   color: var(--color-primary);
   display: flex;
+  font-size: 18px;
   margin: 32px 0;
 }
 
@@ -428,5 +433,23 @@
 
   .text {
     margin: 0;
+  }
+
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .features svg {
+    width: 100%;
   }
 }

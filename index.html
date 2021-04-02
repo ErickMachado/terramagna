@@ -7,7 +7,7 @@
       TerraMagna | Controle e segurança no crédito para o agronegócio
     </title>
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="./js/svgInject.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Header and hero -->
@@ -69,7 +69,7 @@
     </div>
     <section class="articles container">
       <article class="article">
-        <div>
+        <div data-aos="fade-right">
           <h1 class="title">Antecipe suas CPRs e duplicatas</h1>
           <p>
             Com nosso serviço de antecipação, distribuidores do agro conseguem
@@ -86,11 +86,15 @@
             <img src="./assets/icons/icon-chevron-right.svg" alt="" />
           </button>
         </div>
-        <img src="./assets/images/tomatos.jpg" alt="" />
+        <img src="./assets/images/tomatos.jpg" alt="" data-aos="fade-left" />
       </article>
       <article class="article">
-        <img src="./assets/images/monitoring.jpg" alt="" />
-        <div class="text">
+        <img
+          src="./assets/images/monitoring.jpg"
+          alt=""
+          data-aos="fade-right"
+        />
+        <div class="text" data-aos="fade-left">
           <h1 class="title">Monitoramento de garantias</h1>
           <p>
             Financiadores do agro tem mais segurança para investir no setor com
@@ -112,27 +116,27 @@
     <section class="numbers">
       <h1 class="title">Alguns números do FIDES</h1>
       <div class="container cards">
-        <div class="card">
+        <div class="card" data-aos="flip-left">
           <img src="./assets/icons/icon-wallet.svg" alt="" />
           <h2 class="card_title">R$15 Bi</h2>
           <p class="card_description">Em penhor agrícola monitorado.</p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="flip-left">
           <img src="./assets/icons/icon-weheat.svg" alt="" />
           <h2 class="card_title">22.000</h2>
           <p class="card_description">Fazendas monitoradas.</p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="flip-left">
           <img src="./assets/icons/icon-barn.svg" alt="" />
           <h2 class="card_title">38</h2>
           <p class="card_description">Fazendas monitoradas.</p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="flip-left">
           <img src="./assets/icons/icon-pin.svg" alt="" />
           <h2 class="card_title">1.002</h2>
           <p class="card_description">Municípios com clientes ativos</p>
         </div>
-        <div class="card">
+        <div class="card" data-aos="flip-left">
           <img src="./assets/icons/icon-pin.svg" alt="" />
           <h2 class="card_title">0.0% de perda</h2>
           <p class="card_description">Em financiamentos monitorados.</p>
@@ -141,6 +145,7 @@
     </section>
     <section class="features container">
       <svg
+        data-aos="fade-right"
         width="642"
         height="356"
         viewBox="0 0 642 356"
@@ -668,7 +673,7 @@
           </filter>
         </defs>
       </svg>
-      <div class="features_list">
+      <div class="features_list" data-aos="fade-left">
         <h1 class="title">Alguns benefícios do FIDES</h1>
         <ul>
           <li>
@@ -686,6 +691,7 @@
         </ul>
       </div>
     </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>
