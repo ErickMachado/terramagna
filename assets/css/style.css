@@ -15,6 +15,7 @@
 
 .header {
   animation: fadeInDown 1s forwards;
+  left: 0;
   padding: 16px 0;
   position: fixed;
   top: 0;
@@ -301,6 +302,7 @@
   background: var(--color-primary);
   margin-top: 128px;
   padding: 32px 0;
+  width: 100%;
 }
 
 .numbers .title {
@@ -370,6 +372,51 @@
   margin-right: 8px;
 }
 
+.localization {
+  background: var(--color-primary);
+  margin-top: 64px;
+  padding: 32px 0;
+}
+
+.localization .container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.localization .logo {
+  width: 178px;
+}
+
+.localization_info {
+  align-items: center;
+  display: flex;
+  margin: 32px 0;
+}
+
+.localization_info img {
+  margin-right: 8px;
+}
+
+.localization_info p {
+  color: var(--color-light);
+  max-width: 300px;
+}
+
+.localization iframe {
+  border-radius: 15px;
+}
+
+footer {
+  background: var(--color-secondary);
+  padding: 16px 0;
+}
+
+footer p {
+  color: var(--color-primary);
+  font-size: 14px;
+}
+
 @media screen and (max-width: 980px) {
   .logo {
     width: 180px;
@@ -415,6 +462,7 @@
   }
 
   .content h1 {
+    font-size: 32px;
     text-align: center;
   }
 
@@ -437,6 +485,14 @@
 
   .cards {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .localization .container {
+    flex-direction: column;
+  }
+
+  .localization iframe {
+    width: 100%;
   }
 }
 
